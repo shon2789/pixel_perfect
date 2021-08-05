@@ -14,4 +14,5 @@ The given design:/
 
 The result:
 
-<img width="1440" alt="Screen Shot 2021-08-05 at 23 21 03" src="https://user-images.githubusercontent.com/74869982/128415956-6447ce15-4adc-4993-8aad-33d999680377.png">
+<img width="1600" alt="Screen Shot 2021-08-05 at 23 24 49" src="https://user-images.githubusercontent.com/74869982/128416298-1f93203c-76f3-42b5-9e83-fa83e0018cae.png">
+
