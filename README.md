@@ -9,7 +9,7 @@
 The given design:/
 
 
-<img width="2560" alt="Screen Shot 2021-08-05 at 23 21 03 (2)" src="https://user-images.githubusercontent.com/74869982/128415916-22f9faa8-884d-4905-bee2-37c97d159930.png">
+<img width="2560" alt="Screen Shot 2021-08-05 at 23 27 06 (2)" src="https://user-images.githubusercontent.com/74869982/128416569-f34586cf-cbb0-49fa-b855-0d1660de3a7b.png">
 
 
 The result:
