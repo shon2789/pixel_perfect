@@ -13,7 +13,7 @@
 </head>
 
 <body>
-
+    <div class="screen" onclick="toggleMenu()"></div>
     <header class="main-header flex">
         <div class="nav-container main-layout flex align-center space-between">
             <div class="logo">Blogin<span class="green-dot">.</span></div>
@@ -23,6 +23,7 @@
                 <li><a href="">Work</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <i onclick="toggleMenu()" class="fa fa-bars btn-menu-toggle"></i>
         </div>
     </header>
 
@@ -37,11 +38,11 @@
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex
                     ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+                    <br><br>
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="arrow"><img src="images/btnarrow.png"
+                <button class="card-btn">Continue Reading<span class="arrow"><img src="images/arrow.png"
                             alt=""></span></button>
             </div>
         </div>
@@ -52,14 +53,10 @@
                     henderit in voluptate.
                 </h2>
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex
-                    ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur...
+                    ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="arrow"><img src="images/btnarrow.png"
+                <button class="card-btn">Continue Reading<span class="arrow"><img src="images/arrow.png"
                             alt=""></span></button>
             </div>
         </div>
@@ -71,7 +68,7 @@
                 <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                     ex
                     ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+                    <br><br>
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
@@ -102,7 +99,11 @@
         </div>
     </footer>
 
-
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
 </body>
 
 </html>
