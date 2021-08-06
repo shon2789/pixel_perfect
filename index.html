@@ -13,7 +13,27 @@
 </head>
 
 <body>
-    <div class="screen" onclick="toggleMenu()"></div>
+
+    <div class="modal-container">
+        <div class="modal flex column align-center space-between">
+            <div class="modal-title">Duis aute irure dolor in
+                henderit in voluptate.</div>
+            <div class="modal-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                ut
+                aliquip
+                ex
+                ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br><br>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur...
+            </div>
+            <button onclick="toggleModal()" class="modal-close-btn">close</button>
+        </div>
+    </div>
+
+
+    <div class="screen-menu" onclick="toggleMenu()"></div>
+    <div class="screen-modal" onclick="toggleModal()"></div>
     <header class="main-header flex">
         <div class="nav-container main-layout flex align-center space-between">
             <div class="logo">Blogin<span class="green-dot">.</span></div>
@@ -27,8 +47,8 @@
         </div>
     </header>
 
-    <main class="main-content main-layout cards-layout">
-        <div class="card flex">
+    <main class="main-content main-layout ">
+        <div class="card flex ">
             <img class="card-image" src="images/001.jpeg" alt="">
 
             <div class="card-content flex column space-between">
@@ -42,8 +62,8 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="arrow"><img src="images/arrow.png"
-                            alt=""></span></button>
+                <button onclick="toggleModal()" class="card-btn">Continue Reading<span class="arrow"><img
+                            src="images/arrow.png" alt=""></span></button>
             </div>
         </div>
         <div class="card flex">
@@ -56,8 +76,8 @@
                     ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Duis
                     aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="arrow"><img src="images/arrow.png"
-                            alt=""></span></button>
+                <button onclick="toggleModal()" class="card-btn">Continue Reading<span class="arrow"><img
+                            src="images/arrow.png" alt=""></span></button>
             </div>
         </div>
         <div class="card flex">
@@ -72,8 +92,8 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="arrow"><img src="images/arrow.png"
-                            alt=""></span></button>
+                <button onclick="toggleModal()" class="card-btn">Continue Reading<span class="arrow"><img
+                            src="images/arrow.png" alt=""></span></button>
             </div>
         </div>
         <div class="content-nav flex align-center space-between ">
@@ -102,6 +122,18 @@
     <script>
         function toggleMenu() {
             document.body.classList.toggle('menu-open');
+        }
+
+
+        function toggleModal() {
+            var elModal = document.querySelector('.modal-container');
+            if (document.body.classList.contains('modal-open')) {
+                document.querySelector('.modal-container').style.display = 'none';
+                document.body.classList.toggle('modal-open');
+                return;
+            }
+            document.body.classList.toggle('modal-open');
+            document.querySelector('.modal-container').style.display = 'block';
         }
     </script>
 </body>
