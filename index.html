@@ -38,10 +38,23 @@
         <div class="nav-container main-layout flex align-center space-between">
             <div class="logo">Blogin<span class="green-dot">.</span></div>
             <ul class="main-nav clean-list flex">
-                <li><a href="">Journal</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li>
+
+
+                <div class="dropdown-container flex column">
+                    <li onclick="toggleDropDown()" class="nav-item journal">Journal
+                    </li>
+                    <ul class="dropdown">
+                        <li class="dropdown-item"><a href="">April 2020</a></li>
+                        <li class="dropdown-item"><a href="">September 2020</a></li>
+                        <li class="dropdown-item"><a href="">Februar 2021</a></li>
+                        <li class="dropdown-item"><a href="">July 2021</a></li>
+                    </ul>
+                </div>
+
+
+                <li class="nav-item"><a href="">About</a></li>
+                <li class="nav-item"><a href="">Work</a></li>
+                <li class="nav-item"><a href="">Contact</a></li>
             </ul>
             <i onclick="toggleMenu()" class="fa fa-bars btn-menu-toggle"></i>
         </div>
@@ -134,6 +147,10 @@
             }
             document.body.classList.toggle('modal-open');
             document.querySelector('.modal-container').style.display = 'block';
+        }
+
+        function toggleDropDown() {
+            document.body.classList.toggle('dropdown-open');
         }
     </script>
 </body>
